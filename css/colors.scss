@@ -1,0 +1,97 @@
+$colors: (
+        main: #9698A7, // Body Main Text
+        primary: #0b193a, // headings
+        secondary: #23499e, // buttons and sub headings
+        thirdly: #ffd400,
+
+        blackColor: #000,
+        whiteColor: #fff,
+
+        fbColor: #3b5998,
+        tColor: #1DA1F2,
+        lInColor: #0077b5,
+
+        selectionBg: #23499e,
+        selectionColor: #fff,
+        scrollTrackBg: #f1f1f1,
+        scrollThumbBg: #888,
+        scrollThumbHoverBg: #555,
+);
+
+$transition: (
+  main: all 0.5s ease
+);
+
+::-moz-selection {color: map_get($colors, selectionColor);background: map_get($colors, selectionBg);}
+::selection {color: map_get($colors, selectionColor);background: map_get($colors, selectionBg);}
+::-webkit-scrollbar-track {background: map_get($colors, scrollTrackBg);}
+::-webkit-scrollbar-thumb {background: map_get($colors, scrollThumbBg);}
+::-webkit-scrollbar-thumb:hover {background: map_get($colors, scrollThumbHoverBg);}
+
+body{color: map-get($colors, main);}
+
+
+.bg-primary, .btn-primary
+{
+  background: map-get($colors, primary) !important;
+}
+.text-primary{
+  color: map-get($colors, primary) !important;
+}
+.border-primary{
+  border-color: map-get($colors, primary) !important;
+}
+.bg-secondary, .btn-secondary{
+  background-color:  map-get($colors, secondary) !important;
+}
+.text-secondary{
+  color: map-get($colors, secondary) !important;
+}
+.border-secondary{
+  border-color:  map-get($colors, secondary) !important;
+}
+.bg-thirdly, .btn-thirdly{
+  background-color:  map-get($colors, thirdly) !important;
+}
+.btn-primary, .btn-secondary{
+  color: map-get($colors, whiteColor) !important;
+}
+.btn-thirdly{
+  color: map-get($colors, primary) !important;
+}
+.btn-primary, .btn-secondary{border-color: transparent!important;}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+  color: map-get($colors, thirdly );
+}
+
+.comp-cat-item{color: map-get($colors, primary );}
+
+/* SOCIAL */
+.social-link, #date{color: map-get($colors, whiteColor );}
+.fb{background: map-get($colors, fbColor );}
+.tw{background: map-get($colors, tColor );}
+.l-in{background: map-get($colors, lInColor );}
+
+/* Heading */
+.heading-blk:after{background: map-get($colors, thirdly );}
+
+/* Slick */
+.slick-arrow{background: map-get($colors, thirdly );}
+
+/* OWL */
+.owl-dot{background: map-get($colors, whiteColor)!important;}
+.logos-carousel .owl-dot{background: map-get($colors, thirdly)!important;}
+
+/* Company Details */
+.comp-det-item{background: map-get($colors, secondary);}
+.comp-det-item h6{color: map-get($colors, thirdly );}
+.comp-det-item p{color: rgba(255,255,255,0.4);}
+
+/* Transition */
+a, .btn:before, .nav-item .nav-link:after,
+#header-wrap,
+#header-wrap.header-fixed .navbar-brand,
+#header-wrap.header-fixed .navbar-brand img{
+  transition: map_get($transition, main);
+}

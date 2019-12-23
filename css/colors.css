@@ -1,0 +1,132 @@
+::-moz-selection {
+  color: #fff;
+  background: #23499e;
+}
+
+::selection {
+  color: #fff;
+  background: #23499e;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  color: #9698A7;
+}
+
+.bg-primary, .btn-primary {
+  background: #0b193a !important;
+}
+
+.text-primary {
+  color: #0b193a !important;
+}
+
+.border-primary {
+  border-color: #0b193a !important;
+}
+
+.bg-secondary, .btn-secondary {
+  background-color: #23499e !important;
+}
+
+.text-secondary {
+  color: #23499e !important;
+}
+
+.border-secondary {
+  border-color: #23499e !important;
+}
+
+.bg-thirdly, .btn-thirdly {
+  background-color: #ffd400 !important;
+}
+
+.btn-primary, .btn-secondary {
+  color: #fff !important;
+}
+
+.btn-thirdly {
+  color: #0b193a !important;
+}
+
+.btn-primary, .btn-secondary {
+  border-color: transparent !important;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+  color: #ffd400;
+}
+
+.comp-cat-item {
+  color: #0b193a;
+}
+
+/* SOCIAL */
+.social-link, #date {
+  color: #fff;
+}
+
+.fb {
+  background: #3b5998;
+}
+
+.tw {
+  background: #1DA1F2;
+}
+
+.l-in {
+  background: #0077b5;
+}
+
+/* Heading */
+.heading-blk:after {
+  background: #ffd400;
+}
+
+/* Slick */
+.slick-arrow {
+  background: #ffd400;
+}
+
+/* OWL */
+.owl-dot {
+  background: #fff !important;
+}
+
+.logos-carousel .owl-dot {
+  background: #ffd400 !important;
+}
+
+/* Company Details */
+.comp-det-item {
+  background: #23499e;
+}
+
+.comp-det-item h6 {
+  color: #ffd400;
+}
+
+.comp-det-item p {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Transition */
+a, .btn:before, .nav-item .nav-link:after,
+#header-wrap,
+#header-wrap.header-fixed .navbar-brand,
+#header-wrap.header-fixed .navbar-brand img {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/*# sourceMappingURL=colors.css.map */
