@@ -1,7 +1,7 @@
 $colors: (
         main: #9698A7, // Body Main Text
         primary: #0b193a, // headings
-        secondary: #23499e, // buttons and sub headings
+        secondary: #0840af, // buttons and sub headings
         thirdly: #ffd400,
 
         blackColor: #000,
@@ -62,7 +62,7 @@ body{color: map-get($colors, main);}
 .btn-primary, .btn-secondary{border-color: transparent!important;}
 
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-  color: map-get($colors, thirdly );
+  color: map-get($colors, whiteColor);
 }
 
 .comp-cat-item{color: map-get($colors, primary );}
@@ -87,6 +87,10 @@ body{color: map-get($colors, main);}
 .comp-det-item{background: map-get($colors, secondary);}
 .comp-det-item h6{color: map-get($colors, thirdly );}
 .comp-det-item p{color: rgba(255,255,255,0.4);}
+
+/* Guide */
+.guid-container .comp-cat-item{background: map-get($colors, secondary);color:map-get($colors, whiteColor);}
+.guid-container .comp-cat-item:hover{background: map-get($colors, primary);}
 
 /* Transition */
 a, .btn:before, .nav-item .nav-link:after,

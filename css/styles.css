@@ -51,7 +51,7 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .rtl #date{text-align: left;}
 
 .navbar-brand img{height: 60px;}
-.nav-link{text-transform: capitalize;font-weight: bold;cursor:pointer;}
+.nav-link{padding-top:.8rem;padding-bottom:.8rem;text-transform: capitalize;font-weight: bold;cursor:pointer;}
 .navbar-nav{width: 100%;justify-content: space-between;}
 
 .header-fixed{position: fixed;top:0;right:0;left:0;width:100%;z-index: 1009;}
@@ -110,8 +110,8 @@ a:hover, .btn-link:hover{text-decoration: none;}
 
 /* HEADING */
 .heading-blk{margin-bottom: 25px;}
-.heading-blk:after{content:'';width:100px;height:3px;margin:3px auto 0;display: block;}
-
+.heading-blk:after{content:'';width:100px;height:3px;margin-top:3px;display: block;}
+.heading-blk.text-center:after{margin:3px auto 0;}
 #page-tit{text-transform: capitalize;}
 
 /* ARTICLE */
@@ -183,7 +183,11 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .comp-cat-item:hover{background: rgba(255, 255, 255, 1);}
 
 /* Careers */
-.career-item{margin-bottom:20px;padding:10px;display:flex;justify-content: space-between;background: #eee;border-radius: 3px;overflow: hidden;}
+.careers-blk{background: #eee;
+    padding: 20px 20px 0;
+    border-radius: 5px;}
+.career-item{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid rgba(0,0,0,0.3);display:flex;justify-content: space-between;overflow: hidden;}
+.careers-blk .career-item:last-child{border-bottom:0;}
 .career-brand{width:50px;flex: 0 0 50px;}
 .career-dets{width:100%;max-width: 600px;}
 .career-dets p{text-align: justify;}
@@ -206,6 +210,47 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .career-heading a{display:inline-block;margin-top:10px;text-transform: capitalize;}
 .career-heading .comp-logo{height: 70px;}
 
+/* Ads Slider */
+.ad-slider{    height: calc(100% - 30px);background: #ddd;margin-bottom:30px;}
+#ad-slider .owl-item, #ad-slider .item{height:100%;display:flex;align-items:center;}
+
+/* Conferences */
+.confs-blk{margin-top:30px;}
+.conf-item{border: 1px solid #ddd;margin-bottom: 30px;}
+.conf-body{padding: 10px;}
+.conf-body, .conf-footer{display:flex;}
+.conf-footer{align-items: center;justify-content: space-between;padding:10px;background: #ddd;}
+.conf-brand img{max-width:240px;}
+.conf-dets p{text-align:justify;}
+
+.search-blk{margin-top:30px;padding:15px;background: #eee;border-radius: 5px;}
+
+/* Search */
+.search-result-blk{margin: 30px 0;}
+.serch-result-item{margin-bottom: 20px;padding-bottom: 20px;border-bottom: 1px solid #ddd;}
+.search-result-blk .serch-result-item:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0;}
+.search-body{display: flex;justify-content: space-between;}
+.search-body img{max-width:200px;}
+
+/* Course */
+.courses-blk{margin-top:30px;}
+.course-item{margin-bottom:30px;border:1px solid #ddd;padding:10px;display:flex;border-radius: 3px;text-transform: capitalize;}
+.course-img{margin-right:10px;max-width:300px;width:100%;flex-shrink:0;flex-grow:0;border-radius: 3px;overflow:hidden;}
+.rtl .course-img{margin-left:10px;margin-right:0;}
+.course-dets{margin-top:10px;}
+.course-meta > div{margin-right:10px;}
+.rtl .course-meta > div{margin-left:10px;margin-right:0;}
+.course-price{font-size:1.1rem;font-weight:bold;}
+sel{margin-right:5px;}
+.rtl sel{margin-left:5px;margin-right:0;}
+
+.courses-same-blk .course-item{flex-direction: column;}
+.courses-same-blk .course-item .course-img{margin-bottom:10px;max-width:100%;}
+
+/* Guide */
+.search-bar{padding:10px;margin:30px 0;border-radius: 3px;}
+
+
 /*************** RESPONSIVE ********************/
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
@@ -214,12 +259,18 @@ a:hover, .btn-link:hover{text-decoration: none;}
     .navbar-brand img {height: 54px;}
 
     #cont-slider img{height: 150px;}
+
+    .conf-body, .conf-footer{flex-direction:column;justify-content: flex-start;align-items: flex-start;}
+    .conf-dets{margin-top:10px;}
+    .conf-footer p:first-child{margin-bottom:10px!important;}
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
     #cont-slider img{height: 250px;}
 }
 @media (max-width: 767.98px) {
+    .course-item{flex-direction: column;}
+    .course-img{margin-bottom:10px;}
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {

@@ -54,43 +54,43 @@ $(window).on('scroll', function(){
 $(document).ready(function () {
     initiateAnimation();
     getTodayDateTime();
-    navScrollClickHandling();
+    // navScrollClickHandling();
 
     $('#search-lnk').click(function(){
         $('.search-form').slideToggle();
     });
 
     try {
-        $('#datepicker').datepicker();
+        $('.datepicker').datepicker();
     }
     catch(err) {
         // NO DATE PICKER IN PAGE
     }
 });
 
-function navScrollClickHandling() {
-    $('#main-header .nav-item').click(function(){
-        $('#main-header .nav-item').not($(this)).removeClass('active');
-        $(this).addClass('active');
-    });
+// function navScrollClickHandling() {
+//     $('#main-header .nav-item').click(function(){
+//         $('#main-header .nav-item').not($(this)).removeClass('active');
+//         $(this).addClass('active');
+//     });
 
-    $(document).on("scroll", onScroll);
+//     $(document).on("scroll", onScroll);
 
-    function onScroll(event){
-        var scrollPos = $(document).scrollTop();
-        $('.nav-item .nav-link').not($('#search-lnk')).each(function () {
-            var currLink = $(this);
-            var currLinkAttr = currLink.attr("href");
-            var X = currLinkAttr.split('#')[1];
-            currLinkAttr = "#"+X;
-            var refElement = $(currLinkAttr);
-            if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-                $('.nav-item .nav-link').not(currLink).closest('.nav-item').removeClass("active");
-                currLink.closest('.nav-item').addClass("active");
-            }
-            else{
-                currLink.removeClass("active");
-            }
-        });
-    }
-}
+//     function onScroll(event){
+//         var scrollPos = $(document).scrollTop();
+//         $('.nav-item .nav-link').not($('#search-lnk')).each(function () {
+//             var currLink = $(this);
+//             var currLinkAttr = currLink.attr("href");
+//             var X = currLinkAttr.split('#')[1];
+//             currLinkAttr = "#"+X;
+//             var refElement = $(currLinkAttr);
+//             if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+//                 $('.nav-item .nav-link').not(currLink).closest('.nav-item').removeClass("active");
+//                 currLink.closest('.nav-item').addClass("active");
+//             }
+//             else{
+//                 currLink.removeClass("active");
+//             }
+//         });
+//     }
+// }

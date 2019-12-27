@@ -37,15 +37,15 @@ body {
 }
 
 .bg-secondary, .btn-secondary {
-  background-color: #23499e !important;
+  background-color: #0840af !important;
 }
 
 .text-secondary {
-  color: #23499e !important;
+  color: #0840af !important;
 }
 
 .border-secondary {
-  border-color: #23499e !important;
+  border-color: #0840af !important;
 }
 
 .bg-thirdly, .btn-thirdly {
@@ -65,7 +65,7 @@ body {
 }
 
 .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
-  color: #ffd400;
+  color: #fff;
 }
 
 .comp-cat-item {
@@ -110,7 +110,7 @@ body {
 
 /* Company Details */
 .comp-det-item {
-  background: #23499e;
+  background: #0840af;
 }
 
 .comp-det-item h6 {
@@ -119,6 +119,16 @@ body {
 
 .comp-det-item p {
   color: rgba(255, 255, 255, 0.4);
+}
+
+/* Guide */
+.guid-container .comp-cat-item {
+  background: #0840af;
+  color: #fff;
+}
+
+.guid-container .comp-cat-item:hover {
+  background: #0b193a;
 }
 
 /* Transition */
