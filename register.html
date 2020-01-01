@@ -4,31 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Marine Middle East</title>
-    <link rel="stylesheet" href="../css/aos.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/all.css">
-    <link rel="stylesheet" href="../css/jquery-ui.css">
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/colors.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scripts.js"></script>
 
-    <!-- RTL StyleSheet -->
-    <link rel="stylesheet" href="../css/styles-ar.css">
-
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/jquery-ui.js"></script>
-    <script src="../js/popper.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/aos.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/scripts.js"></script>
-
-    <link rel="stylesheet" href="../css/slick.css">
-    <script src="../js/slick.js"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <script src="js/slick.js"></script>
 
 </head>
-<!-- RTL Class & Direction -->
-<body class="rtl" dir="rtl">
+<body>
 <div class="main-wrapper">
 <header id="main-header">
     <div id="top-bar" class="bg-primary">
@@ -44,6 +39,7 @@
                 <div class="col-sm-6 col-7">
                     <div class="d-l-blk">
                         <div id="date"></div>
+                        <a href="login.html" class="lang-lnk text-white">Login</a>
                         <a href="ar/index.html" class="lang-lnk text-white"><i class="fas fa-globe"></i> AR</a>
                     </div>
                 </div>
@@ -59,9 +55,9 @@
                         <a id="navbar-toggler-lnk" href="javascript:void(0)" class="btn btn-secondary mr-3" onclick="mobOpenMainMenu()">
                             <i class="fas fa-bars"></i>
                         </a>
-                        <a class="navbar-brand" href="#"><img src="../images/logo-en.png" alt="Marine Middle East"></a>
+                        <a class="navbar-brand" href="#"><img src="images/logo-en.png" alt="Marine Middle East"></a>
                     </div>
-                    <div class="ad-blk"><img src="../images/banner.png"></div>
+                    <div class="ad-blk"><img src="images/banner.png"></div>
                 </div>
                 
             </div> 
@@ -108,44 +104,60 @@
         
     </div>
 </header>
-<section id="page-tit" class="bg-blk"  style="background: url('../images/img-06.jpeg') no-repeat 50% 50%;background-size: cover;background-attachment: fixed;">
+<section id="page-tit">
     <div class="container py-5 text-center text-white">
-        <h1 class="py-5">career</h1>
+        <h1 class="pt-4">Register</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb p-0 m-0 pb-4">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Library</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Data</li>
+            </ol>
+        </nav>
     </div>
 </section>
 <section class="main-content">
     <div class="container">
-        <div class="cont-heading career-heading pb-3" data-aos="fade-down">
-            <h5 class="text-primary mb-0 text-capitalize font-weight-bold">
-                Egypt bulk middle east 2019</h5>
-            <div class="comp-brand"><img class="comp-logo" src="../images/comp-03.jpg"></div>
-        </div>
-        <div id="cont-dets" class="pb-5" data-aos="fade-up">
-            <p>Career details career details career details career details 
-                career details 
-                career details 
-                career details 
-                career details 
-                career details 
-                career details 
-                career details 
-                career details 
-                career details 
-                career details 
-                career details 
-                career details 
-                career details 
-                career details. 
-            </p>
-            <h6 class="font-weight-bold text-capitalize">agenda:</h6>
-            <ul>
-                <li>list item details</li>
-                <li>list item details</li>
-                <li>list item details</li>
-                <li>list item details</li>
-                <li>list item details</li>
-            </ul>
-            <a href="company-details.html" class="btn btn-thirdly btn-sm text-capitalize">company profile</a>
+        <div class="reg-form py-5">
+            <h5 class="text-primary font-weight-bold text-capitalize">Create a Free Account</h5>
+            <div class="form-group text-capitalize text-primary">
+                already have an account? <a href="login.html" class="text-secondary">login</a>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label>first name</label>
+                    <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label>last name</label>
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label>email</label>
+                    <input type="email" class="form-control" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label>password</label>
+                    <input type="password" class="form-control" placeholder="password">
+                </div>
+                <div class="form-group">
+                    <label>target job title</label>
+                    <input type="text" class="form-control" placeholder="What is the job title you are lokking for?">
+                </div>
+                <div class="form-group">
+                    <label>job role</label>
+                    <select class="form-control">
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>upload your cv</label>
+                    <input type="file" class="form-file">
+                </div>
+                <button type="button" class="btn btn-thirdly text-capitalize">register</button>
+            </form>    
         </div>
     </div>    
 </section>
@@ -154,7 +166,6 @@
         <div class="text-center py-2">All Rights Reserved © Marine Middle East 2020</div>
     </div>
 </footer>
-
 </div>
 </body>
 </html>

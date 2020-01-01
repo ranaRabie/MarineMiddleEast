@@ -25,27 +25,27 @@ body {
 }
 
 .bg-primary, .btn-primary {
-  background: #0b193a !important;
+  background: #2c4a70 !important;
 }
 
 .text-primary {
-  color: #0b193a !important;
+  color: #2c4a70 !important;
 }
 
 .border-primary {
-  border-color: #0b193a !important;
+  border-color: #2c4a70 !important;
 }
 
 .bg-secondary, .btn-secondary {
-  background-color: #0840af !important;
+  background-color: #2784fc !important;
 }
 
 .text-secondary {
-  color: #0840af !important;
+  color: #2784fc !important;
 }
 
 .border-secondary {
-  border-color: #0840af !important;
+  border-color: #2784fc !important;
 }
 
 .bg-thirdly, .btn-thirdly {
@@ -57,11 +57,19 @@ body {
 }
 
 .btn-thirdly {
-  color: #0b193a !important;
+  color: #2c4a70 !important;
 }
 
 .btn-primary, .btn-secondary {
   border-color: transparent !important;
+}
+
+.bg-primaryDark {
+  background: #010917 !important;
+}
+
+.bg-geryLight {
+  background: #eee !important;
 }
 
 .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
@@ -69,7 +77,29 @@ body {
 }
 
 .comp-cat-item {
-  color: #0b193a;
+  color: #2c4a70;
+}
+
+/* Page Title */
+#page-tit {
+  background-color: #eee;
+}
+
+#page-tit .container {
+  color: #2c4a70 !important;
+}
+
+.breadcrumb-item a {
+  color: #2784fc;
+}
+
+.breadcrumb-item a:hover {
+  color: #2c4a70;
+}
+
+/* Footer */
+#main-footer.bg-primary {
+  background: #2784fc !important;
 }
 
 /* SOCIAL */
@@ -110,7 +140,7 @@ body {
 
 /* Company Details */
 .comp-det-item {
-  background: #0840af;
+  background: #2784fc;
 }
 
 .comp-det-item h6 {
@@ -123,12 +153,12 @@ body {
 
 /* Guide */
 .guid-container .comp-cat-item {
-  background: #0840af;
+  background: #2784fc;
   color: #fff;
 }
 
 .guid-container .comp-cat-item:hover {
-  background: #0b193a;
+  background: #2c4a70;
 }
 
 /* Transition */

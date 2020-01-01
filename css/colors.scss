@@ -1,8 +1,13 @@
 $colors: (
         main: #9698A7, // Body Main Text
-        primary: #0b193a, // headings
-        secondary: #0840af, // buttons and sub headings
+        primary: #2c4a70, // headings
+        // primary: #0b193a, // headings
+        primaryDark: #010917,
+        secondary: #2784fc, // buttons and sub headings
+        // secondary: #0840af, // buttons and sub headings
         thirdly: #ffd400,
+
+        geryLight: #eee,
 
         blackColor: #000,
         whiteColor: #fff,
@@ -61,11 +66,30 @@ body{color: map-get($colors, main);}
 }
 .btn-primary, .btn-secondary{border-color: transparent!important;}
 
+.bg-primaryDark{
+  background: map-get($colors, primaryDark) !important;
+}
+.bg-geryLight{
+  background: map-get($colors, geryLight) !important;
+}
+
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
   color: map-get($colors, whiteColor);
 }
 
 .comp-cat-item{color: map-get($colors, primary );}
+
+/* Page Title */
+#page-tit{background-color: map-get($colors, geryLight);}
+#page-tit .container{color: map-get($colors, primary)!important;}
+
+.breadcrumb-item a{color: map-get($colors, secondary );}
+.breadcrumb-item a:hover{color: map-get($colors, primary );}
+
+/* Footer */
+#main-footer.bg-primary{
+  background: map-get($colors, secondary )!important;
+}
 
 /* SOCIAL */
 .social-link, #date{color: map-get($colors, whiteColor );}

@@ -52,7 +52,7 @@ $(window).on('scroll', function(){
 });
 
 $(document).ready(function () {
-    initiateAnimation();
+    // initiateAnimation();
     getTodayDateTime();
     // navScrollClickHandling();
 
