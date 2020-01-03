@@ -3,9 +3,12 @@ function fixedHeader(){
         const headerDiv = document.querySelector(".header-bottom");
         if(window.pageYOffset  >= 100 && window.innerWidth >= 768){
             headerDiv.classList.add('header-fixed');
+        }else if(window.pageYOffset  >= 100 && window.innerWidth < 768){
+            $('.header-top .container > div > div:first-child').addClass('fix-head-mob');
         }
         else{
             headerDiv.classList.remove('header-fixed');
+            $('.header-top .container > div > div:first-child').removeClass('fix-head-mob');
         }
     }
     catch(err) {
@@ -21,11 +24,20 @@ function initiateAnimation(){
 }
 
 function mobCloseMainMenu(){
-    $('.navbar-collapse').delay(0).animate({top: '-100%'}, 1000);
+    if($('body').hasClass('rtl')){
+        $('.navbar-collapse').delay(0).animate({right: '-320px'}, 1000);
+    }else{
+        $('.navbar-collapse').delay(0).animate({left: '-320px'}, 1000);
+    }
+    
 }
 
 function mobOpenMainMenu(){
-    $('.navbar-collapse').delay(0).animate({top: '0'}, 1000);
+    if($('body').hasClass('rtl')){
+        $('.navbar-collapse').delay(0).animate({right: '0px'}, 1000);
+    }else{
+        $('.navbar-collapse').delay(0).animate({left: '0px'}, 1000);
+    }
 }
 
 function getTodayDateTime(){
@@ -50,6 +62,12 @@ function getTodayDateTime(){
 $(window).on('scroll', function(){
     fixedHeader();
 });
+
+$( window ).on('load', function() {
+    $('.loading').css('display', 'none');
+    $('.main-wrapper').css('display', 'block');
+});
+
 
 $(document).ready(function () {
     // initiateAnimation();
