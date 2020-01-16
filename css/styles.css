@@ -215,11 +215,26 @@ a:hover, .btn-link:hover{text-decoration: none;}
 #cont-dets ul, #cont-dets ol{margin-left: 15px;}
 .rtl #cont-dets ul, .rtl #cont-dets ol{margin-right: 15px;margin-left: 0;}
 .comp-logo{height:130px;}
-#cont-dets .comp-det-item{display:flex;align-items: center;justify-content: center;flex-direction: column;border-radius: 5px;padding: 10px;text-align: center;margin-bottom: 30px;min-height: 88px;height: calc(100% - 30px);font-weight:bold;}
-#cont-dets .comp-det-item h6{opacity: 0.8;}
-#cont-dets .comp-det-item p{text-align: center;margin:0;}
-#cont-dets .comp-det-item i{margin-right:5px;}
-.rtl #cont-dets .comp-det-item i{margin-left:5px;margin-right:0;}
+
+.comp-profile-container{display: flex;
+    flex-direction: row-reverse;}
+.comp-dets{position: relative;}
+.comp-dets:before{content:'';width:0;height:calc(100% - 80px);border-left:2px dashed #2784fc;
+    position: absolute;left:20px;top:0;
+}
+.rtl .comp-dets:before{right: 20px;left:auto;}
+#cont-dets .comp-det-item{position:relative;display:flex;background:transparent!important;font-weight:bold;}
+.comp-det-item p, .comp-det-item h6 {color: #9698A7!important;}
+.comp-det-item p{font-weight:normal;text-align: initial!important;}
+.comp-det-item i{color:#fff!important;}
+.comp-dets-icon{    flex: 0 0 40px;
+    width: 40px;height: 40px;border-radius: 50%;display: flex;align-items: center;justify-content: center;}
+.com-dets-data{margin-left: 10px;margin-top: 5px;}
+.rtl .com-dets-data{margin-right: 10px;margin-left: 0;}
+/* #cont-dets .comp-det-item h6{opacity: 0.8;} */
+/* #cont-dets .comp-det-item p{text-align: center;margin:0;} */
+/* #cont-dets .comp-det-item i{margin-right:5px;} */
+/* .rtl #cont-dets .comp-det-item i{margin-left:5px;margin-right:0;} */
 
 .career-heading{display: flex;justify-content: space-between;align-items: center;}
 .career-heading a{display:inline-block;margin-top:10px;text-transform: capitalize;}
@@ -300,6 +315,8 @@ label{font-weight:bold;font-size:1rem;text-transform: capitalize;}
     .article-item .article-img img {object-fit: cover;min-height: 100%;}
     .article-item.article-fullBg .article-img{max-width:unset;}
     .article-item.article-fullBg .article-img img {width:100%;}
+
+    .comp-profile-container{flex-direction: column;}
 }
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
