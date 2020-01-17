@@ -233,7 +233,7 @@ a:hover, .btn-link:hover{text-decoration: none;}
 .rtl .com-dets-data{margin-right: 10px;margin-left: 0;}
 .comp-texts{margin-right:30px;}
 .rtl .comp-texts{margin-left:30px;margin-right:0;}
-
+.comp-texts span.text-primary{font-weight:bold;font-size:1rem;}
 /* #cont-dets .comp-det-item h6{opacity: 0.8;} */
 /* #cont-dets .comp-det-item p{text-align: center;margin:0;} */
 /* #cont-dets .comp-det-item i{margin-right:5px;} */
