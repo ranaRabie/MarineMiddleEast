@@ -64,7 +64,7 @@ $(window).on('scroll', function(){
 });
 
 $( window ).on('load', function() {
-    $('.loading').css('display', 'none');
+    $('.loader-wrapper').css('display', 'none');
     $('.main-wrapper').css('display', 'block');
 });
 
