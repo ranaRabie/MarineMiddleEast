@@ -15,7 +15,9 @@ $colors: (
         fbColor: #3b5998,
         tColor: #1DA1F2,
         lInColor: #0077b5,
-
+        whatsappColor: #0dbc41,
+        teleColor: #48a9e2,
+        
         selectionBg: #23499e,
         selectionColor: #fff,
         scrollTrackBg: #f1f1f1,
@@ -77,7 +79,7 @@ body{color: map-get($colors, main);}
   color: map-get($colors, whiteColor);
 }
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-  color: map-get($colors, whiteColor);
+  color: map-get($colors, primary);
   border-bottom: 2px solid map-get($colors, whiteColor);
 }
 
@@ -101,10 +103,13 @@ body{color: map-get($colors, main);}
 }
 
 /* SOCIAL */
-.social-link, #date{color: map-get($colors, whiteColor );}
-.fb{background: map-get($colors, fbColor );}
-.tw{background: map-get($colors, tColor );}
-.l-in{background: map-get($colors, lInColor );}
+.social-link, #date{color: map-get($colors, whiteColor )!important;}
+.social-link.fb{background: map-get($colors, fbColor );}
+.social-link.tw{background: map-get($colors, tColor );}
+.social-link.l-in{background: map-get($colors, lInColor );}
+.social-link.whatsapp{background: map-get($colors, whatsappColor );}
+.social-link.tele{background: map-get($colors, teleColor );}
+.social-link{background: map-get($colors, primary);}
 
 /* Heading */
 .heading-blk:after{background: map-get($colors, thirdly );}

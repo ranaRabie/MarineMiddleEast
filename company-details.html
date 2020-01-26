@@ -213,8 +213,31 @@
                     </ul>
                     <p class="mb-0 text-capitalize">
                         <span class="text-primary">Catalog:</span>
-                    </p>                    
-                    <div class="comp-gallery">
+                    </p>            
+                    <div id="comp-catalog">
+                        <div class="owl-carousel">
+                            <div class="item">
+                                <img src='images/img-02.jpeg' >
+                            </div>
+                            <div class="item">
+                                <img src='images/img-01.jpeg' >
+                            </div>
+                            <div class="item">
+                                <img src='images/img-03.jpeg' >
+                            </div>
+                            <div class="item">
+                                <img src='images/img-04.jpeg' >
+                            </div>
+                            <div class="item">
+                                <img src='images/img-05.jpeg' >
+                            </div>
+                            <div class="item">
+                                <img src='images/img-02.jpeg' >
+                            </div>
+
+                        </div>
+                    </div>        
+                    <!-- <div class="comp-gallery">
                         <div class="card-columns">
                             <div class="card" data-aos="fade-in">
                                 <a class='grid-item gallery-item' data-fancybox='gallery' href='images/img-02.jpeg'><img src='images/img-02.jpeg' class=' galary_img w-100'></a> 
@@ -236,6 +259,7 @@
                             </div>
                         </div>
                     </div>
+                </div>> -->
                     <a class="text-underline mb-3 d-block" style="text-decoration: underline;" href="#" download="" target="_blank">Download PDF</a>
 
                     <p class="mb-0 text-capitalize">
@@ -272,15 +296,13 @@
                         <a class="social-link fb" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a class="social-link tw" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a class="social-link l-in" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-link whatsapp" href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a class="social-link tele" href="#" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                        <a class="social-link" href="#" target="_blank"><i class="fas fa-print"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        
-        
-       
-        
+        </div>        
     </div>    
 </section>
 <footer id="main-footer" class="bg-primary">
@@ -288,6 +310,16 @@
         <div class="text-center py-2">All Rights Reserved © Marine Middle East 2020</div>
     </div>
 </footer>
+
+<script>
+    $(document).ready(function(){
+        $('#comp-catalog .owl-carousel').owlCarousel({
+            margin:10,
+            loop:true,
+            items:3
+        })
+    });
+</script>
 </div>
 </body>
 </html>
